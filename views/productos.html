@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta seccion empieza la venta de nuestros robots a partir de componentes electromecánicos en desuso, para luego utilizarlos en competencias conocidas como BattleBots o de coleccion.">
+    <meta name="keywords" content="pelea de robot,robots,delpini,torneo,argentina,electrónica,comprar robots">
+    <meta name="robots"  content="index,follow"  />
+    <title>Venta de robots - Kill bots</title>
+    <link rel="icon" href="../img/Icons/favicon.webp">
+    <link rel="stylesheet" href="../css/reducido.css"><!-- MY css -->
+    <link rel="stylesheet" href="../css/bootstrap.css"><!-- MY css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+</head>
+<body class="body-products">
+    <div class="contenedor">
+        <!-- Inicio de barra de busqueda -->
+        <nav class="navbar navbar-expand-sm bg sticky-top" id="g-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/Icons/killbots.svg" alt="logo de killbots">
+                </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html#g-main">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/reglamento.html">Reglamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/inscripciones.html">Inscripciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!----- header ----->    
+        <header id="sub-nav">
+            <div class="header-top">
+                <h3>PRODUCTOS</h3>
+                <div class="buscar">
+                    <input id="search" class="search" placeholder="BUSCAR PRODUCTOS">
+                </div>
+            </div>
+            <div class="header-ordenar">
+                <select name="" id="">
+                    <option value="">Menor precio</option>
+                    <option value="">Mayor precio</option>
+                    <option value="">A-Z</option>
+                    <option value="">Z-A</option>
+                </select>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <main id="productos">
+            <div class="main-productos">
+                <div>
+                    <div class="row" id="contenedorProductos"></div>
+                </div>	
+            </div>
+        </main>
+        <!-- Main -->
+        <aside id="aside-r">
+            <div class="lateral-categoria">
+                <div class="titulos-lat">
+                    <h6>CATEGORIAS</h6>
+                    <hr class="bg-colors">
+                </div>
+                <div class="todos-product">
+                    <h5>Todos los productos</h5>
+                    <button class="btn bg-success text-light" id="averCarrito" type="click" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Ver Carrito</button>
+                </div>
+            </div>
+            <div class="lateral-noticias">
+                <div class="titulos-lat">
+                    <h6>ULTIMAS NOTICIAS</h6>
+                </div>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-interval="false">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <iframe class="youtube" src="https://www.youtube.com/embed/jly7YOOcWJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe class="youtube" src="https://www.youtube.com/embed/qsJ1JmxGMK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="carousel-item">
+                            <iframe class="youtube" src="https://www.youtube.com/embed/09ekK2QgflM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Atras</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Adelante</span>
+                            </button>
+                    </div>
+            </div>   
+        </aside>
+        <section>            
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Carrito de Compras: </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <h3>Total de la compra: <span id="totalCompra">0</span></h3>
+                    <button class="btn btn-primary bg-secondary" id="vaciarCarrito">Vaciar Carrito</button>
+                    <div class="m-auto">
+                        <div class="row py-3" id="contenedorCarrito"></div>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <!-- pie -->
+        <footer id="footer">
+            <div class="flecha-top mas-info">
+                <a href="#sub-nav">
+                    <img src="../img/Icons/scroll_arrows.webp" class="flecha-arriba" alt="boton top menu">
+                </a>
+            </div>
+            <div class="footer">
+                <div class="copy">
+                    <p>Copyright © 2022 ELUK. All rights reserved.</p>
+                </div>
+                <div class="icons-footer">
+                    <a href="https://et13delpini.edu.ar/" target="_blank">
+                        <img src="../img/Icons/delpini.webp" class="resolucion-delpi"alt="logo delpini footer">
+                    </a>
+                    <a href="https://www.facebook.com/ET13Delpini" target="_blank">
+                        <img src="../img/Icons/facebook.webp" alt="logo facebook footer">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCf4N6kbsjljnpUha3H01e1A" target="_blank">
+                        <img src="../img/Icons/youtube.webp" alt="logo youtube footer">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script> 
+    <script src="../js/bootstrap.js"></script><!-- bootstrap js -->
+    <script src="../js/carrito.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+[
+    {"nombre": "Robot-1", "precio": 30000, "id":"Robot1", "cantidad":1},
+    {"nombre": "Robot-2", "precio": 30000, "id": "Robot2", "cantidad":1},
+    {"nombre": "Robot-3", "precio": 25000, "id": "Robot3", "cantidad":1},
+    {"nombre": "Robot-4", "precio": 50000, "id": "Robot4", "cantidad":1}
+]

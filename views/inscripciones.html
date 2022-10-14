@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inscripcion para la competencia de killbots - en Escuela Técnica N°13 Ing. J. L. DELPINI, ET N°13, DE 21, Jose Luis Delpini, Lugano.">
+    <meta name="keywords" content="pelea de robot,robots,delpini,torneo,argentina,electrónica">
+    <meta name="robots"  content="index,follow"  />
+    <title>Inscripciones - Kill bots</title>
+    <link rel="icon" href="../img/Icons/favicon.webp">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/reducido.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/animate.css"><!-- wow js --> 
+    
+</head>
+<body class="body-inscrip">
+    <div class="grid-inscripciones">
+        <nav class="navbar navbar-expand-sm bg sticky-top" id="g-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                <img src="../img/Icons/killbots.svg" alt="Logo de killbots">
+                </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html#g-main">Preguntas Frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/reglamento.html">Reglamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/inscripciones.html">Inscripciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!-- header -->
+    <br>
+    <main class="main-grid-ins">
+        <div class="container-inscrip">
+            <div class="formulario-inscrip mitad-container">
+                <form class="formu" id="formularioInscrip">
+                <h1>Inscripcion</h1>
+                <div class="iconos-container">
+                    <a href="https://www.facebook.com/ET13Delpini" class="social"><img src="https://img.icons8.com/ios-glyphs/30/000000/google-logo--v1.png"></a>
+                    <a href="https://www.facebook.com/ET13Delpini" class="social"><img src="https://img.icons8.com/ios-glyphs/30/000000/facebook-new.png"></a>
+                </div>
+                <span class="proceso-inscrip">Proceso de inscripción</span>
+                <input type="text" id="mail" placeholder="Escribe tu email" />
+                <input type="text" id="escuela" placeholder="Escribe tu escuela" />
+                <div class="d-flex">
+                <input class="input-med" type="number" id="edad" placeholder="Edad" />
+                <input class="input-med" type="number" id="integrantes" placeholder="Integrantes" />
+                </div>
+                <input type="text" id="provicia" placeholder="Seleciona tu provicia" />
+                <a href="../404.html">Ya tienes cuenta?</a>
+                <button class="boton-enviar" type="submit" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Inscribirme</button>
+                </form>
+            </div>
+            <div class="img-inscrip-container wow fadeInRight">
+                <div class="img-robots wow fadeInRight">
+                    <img src="../img/Figure/inscrip.webp" alt="Robots para inscripción">
+                </div>
+            </div> -->
+    </div>
+    </main>
+    <section>            
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <h4 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Ver Inscripciones en revision: </h4>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <button id="verReservas" class="btn bg-black text-white">VER RESERVAS</button>
+                <br><br>
+                <div id="contenedor"></div>
+            </div>
+            </div>
+    </section>
+    <!-- pie -->
+    <footer id="g-footer">
+        <div class="flecha-top mas-info">
+            <a href="#header-grid-ins">
+                <img src="../img/Icons/scroll_arrows.webp" class="flecha-arriba" alt="boton top menu">
+            </a>
+        </div>
+        <div class="footer">
+        <div class="copy">
+            <p>Copyright © 2022 ELUK. All rights reserved.</p>
+        </div>
+        <div class="icons-footer">
+            <a href="https://et13delpini.edu.ar/" target="_blank">
+                <img src="../img/Icons/delpini.webp" class="resolucion-delpi"alt="logo delpini footer">
+            </a>
+            <a href="https://www.facebook.com/ET13Delpini" target="_blank">
+                <img src="../img/Icons/facebook.webp" alt="logo facebook footer">
+            </a>
+            <a href="https://www.youtube.com/channel/UCf4N6kbsjljnpUha3H01e1A" target="_blank">
+                <img src="../img/Icons/youtube.webp" alt="logo youtube footer">
+            </a>
+        </div>
+        </div>
+    </div>
+    </footer>
+</div>
+    <!-- bootstrap js -->
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/inscripciones.js"></script><!-- formulario  -->
+    <script src="../js/wow.min.js"></script><!-- wow js -->
+        <script> 
+            new WOW().init();
+        </script> 
+</body>
+</html>
